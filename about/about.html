@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZyXHeal - 关于我们</title>
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="../app.css">
+    <script src="./about.js" defer></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <h1>ZyXHeal</h1>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href="../home/home.html">首页</a>
+        <a href="../diagnos/diagnos.html">开始诊断</a>
+        <a href="./about.html">关于我们</a>
+        <a href="../contact/contact.html">联系我们</a>\
+        <a href="../feedback/feedback.html">使用反馈</a>
+        <div class="right-nav">
+            <a href="#" class="login-register" id="open-modal">登录/注册</a>
+            <img src="../image/log.png" alt="登录/注册" class="logImg">
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <div class="container">
+        <!-- 团队介绍部分 -->
+        <div class="section">
+            <h2>关于我们</h2>
+            <p><b>ZyXHeal</b> 是一个智能AI问诊系统，专注于为用户的睡眠问题做诊断，通过知识图谱的构建等方式精确分析用户病情，同时给出丰富的治疗建议。</p>
+        </div>
+
+        <!-- 团队成员部分 -->
+        <div class="section developer-boxes">
+            <h2>团队成员</h2>
+            <div class="developer-box">
+                <div class="left-side">
+                    <img src="../image/夏浩宇.png" alt="夏浩宇" class="avatar">
+                    <span class="name">夏浩宇</span>
+                </div>
+                <div class="right-side">
+                    <div class="info">
+                        <p>职位：项目负责人</p>
+                        <p>职责：负责项目的整体规划和管理。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="developer-box">
+                <div class="left-side">
+                    <img src="../image/英文豪.png" alt="英文豪" class="avatar">
+                    <span class="name">英文豪</span>
+                </div>
+                <div class="right-side">
+                    <div class="info">
+                        <p>职位：数据分析</p>
+                        <p>职责：负责数据的收集、处理和分析。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="developer-box">
+                <div class="left-side">
+                    <img src="../image/任智.png" alt="任智" class="avatar">
+                    <span class="name">任智</span>
+                </div>
+                <div class="right-side">
+                    <div class="info">
+                        <p>职位：前端搭建</p>
+                        <p>职责：负责前端界面的设计和开发。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 我们的愿景部分 -->
+        <div class="section">
+            <h2>我们的愿景</h2>
+            <p>我们的愿景是通过技术创新，为全球用户提供便捷、高效的睡眠疾病诊断服务，帮助更多人改善睡眠质量，享受健康生活。</p>
+        </div>
+
+        <!-- 我们的服务部分 -->
+        <div class="section">
+            <h2>我们的服务</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <i class="fas fa-bed"></i>
+                    <h3>在线睡眠疾病诊断</h3>
+                    <p>通过简单的问题和选项，逐步引导用户完成疾病诊断。</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-comment-medical"></i>
+                    <h3>个性化健康建议</h3>
+                    <p>根据诊断结果提供个性化的健康建议和改善方案。</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>睡眠数据分析报告</h3>
+                    <p>生成详细的睡眠数据分析报告，帮助用户更好地了解自己的睡眠状况。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 返回上一级按钮 -->
+    <div class="back-to-prev">
+        <img src="../image/返回上一级.png" alt="返回上一级" class="icon icon-back-to-prev">
+    </div>
+
+    <!-- 返回下一级按钮 -->
+    <div class="forward-to-next">
+        <img src="../image/返回下一级.png" alt="返回下一级" class="icon icon-forward-to-next">
+    </div>
+
+
+    <!-- 登录/注册模态框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <form id="login-form">
+                <h2>登录 / 注册</h2>
+                <label for="username">用户名:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">密码:</label>
+                <input type="password" id="password" name="password" required>
+                <p class="beiZhu">/*未注册的用户会进行自动注册*/</p>
+                <button type="submit">登录</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+        <p>&copy; 2024 ZyxHeal. 版权所有.</p>
+    </footer>
+</body>
+</html>

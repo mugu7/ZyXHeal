@@ -1,0 +1,81 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* 头部样式 */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* 主要内容区域样式 */
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+/* 治疗建议项样式 */
+.treatment-item {
+    margin-bottom: 20px;
+}
+
+.treatment-item h3 {
+    color: #4CAF50;
+    margin-top: 0;
+}
+
+.treatment-item p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* 返回上一级和返回下一级按钮的通用样式 */
+.back-to-prev, .forward-to-next {
+    position: fixed;
+    bottom: 20px;
+    z-index: 1000;
+    transform: translateY(-50%);
+}
+
+/* 返回上一级按钮的具体样式 */
+.back-to-prev {
+    left: 40px;
+}
+
+/* 返回下一级按钮的具体样式 */
+.forward-to-next {
+    right: 40px;
+}
+
+/* 图标的通用样式 */
+.icon {
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* 图标悬停效果 */
+.icon:hover {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+    transform: scale(1.1);
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZyxHeal - 使用反馈</title>
+    <link rel="stylesheet" href="./feedback.css">
+    <script src="./feedback.js" defer></script>
+    <link rel="stylesheet" href="../app.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <h1>ZyXHeal</h1>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href="../home/home.html">首页</a>
+        <a href="../diagnos/diagnos.html">开始诊断</a>
+        <a href="../about/about.html">关于我们</a>
+        <a href="../contact/contact.html">联系我们</a>\
+        <a href="./feedback.html">使用反馈</a>
+        <div class="right-nav">
+            <a href="#" class="login-register" id="open-modal">登录/注册</a>
+            <img src="../image/log.png" alt="登录/注册" class="logImg">
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <div class="container">
+        <!-- 反馈标题 -->
+        <div class="section">
+            <h2>使用反馈</h2>
+            <p>感谢您使用 <b>ZyXHeal</b> 进行睡眠障碍疾病的诊断。请填写以下反馈表单，帮助我们不断改进服务质量。</p>
+        </div>
+
+        <!-- 反馈表单 -->
+        <form id="feedback-form">
+            <div class="question">
+                <p>1. 您对我们的诊断流程满意吗？</p>
+                <label><input type="radio" name="q1" value="非常满意"> 非常满意</label>
+                <label><input type="radio" name="q1" value="满意"> 满意</label>
+                <label><input type="radio" name="q1" value="一般"> 一般</label>
+                <label><input type="radio" name="q1" value="不满意"> 不满意</label>
+            </div>
+            <div class="question">
+                <p>2. 您认为我们的诊断结果准确吗？</p>
+                <label><input type="radio" name="q2" value="非常准确"> 非常准确</label>
+                <label><input type="radio" name="q2" value="比较准确"> 比较准确</label>
+                <label><input type="radio" name="q2" value="一般"> 一般</label>
+                <label><input type="radio" name="q2" value="不准确"> 不准确</label>
+            </div>
+            <div class="question">
+                <p>3. 您对我们的用户界面友好度满意吗？</p>
+                <label><input type="radio" name="q3" value="非常满意"> 非常满意</label>
+                <label><input type="radio" name="q3" value="满意"> 满意</label>
+                <label><input type="radio" name="q3" value="一般"> 一般</label>
+                <label><input type="radio" name="q3" value="不满意"> 不满意</label>
+            </div>
+            <div class="question">
+                <p>4. 您对我们的隐私保护措施满意吗？</p>
+                <label><input type="radio" name="q4" value="非常满意"> 非常满意</label>
+                <label><input type="radio" name="q4" value="满意"> 满意</label>
+                <label><input type="radio" name="q4" value="一般"> 一般</label>
+                <label><input type="radio" name="q4" value="不满意"> 不满意</label>
+            </div>
+            <div class="question">
+                <p>5. 您有什么其他建议或意见？</p>
+                <textarea name="comments" rows="4" placeholder="请输入您的建议或意见..."></textarea>
+            </div>
+
+            <!-- 提交按钮 -->
+            <div class="section">
+                <button type="submit" class="submit-button">提交反馈</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- 返回上一级按钮 -->
+    <div class="back-to-prev">
+        <img src="../image/返回上一级.png" alt="返回上一级" class="icon icon-back-to-prev">
+    </div>
+
+    <!-- 返回下一级按钮 -->
+    <div class="forward-to-next">
+        <img src="../image/返回下一级.png" alt="返回下一级" class="icon icon-forward-to-next">
+    </div>
+    
+
+    <!-- 登录/注册模态框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <form id="login-form">
+                <h2>登录 / 注册</h2>
+                <label for="username">用户名:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">密码:</label>
+                <input type="password" id="password" name="password" required>
+                <p class="beiZhu">/*未注册的用户会进行自动注册*/</p>
+                <button type="submit">登录</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+        <p>&copy; 2024 ZyxHeal. 版权所有.</p>
+    </footer>
+</body>
+</html>
