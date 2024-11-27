@@ -6,13 +6,33 @@
     <title id="page-title">治疗建议</title>
     <link rel="stylesheet" href="analysis.css">
     <link rel="stylesheet" href="../app.css">
+    <script src="analysis.js"></script>
+    <link rel="stylesheet" href="../app/app.css">
+    <script src="../app/app.js" defer></script>
 </head>
 <body>
+    <!-- 头部 -->
     <header>
         <h1 id="header-title">治疗建议</h1>
     </header>
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href="../home/home.html">首页</a>
+        <a href="../diagnos/diagnos.html">开始诊断</a>
+        <a href="../about/about.html">关于我们</a>
+        <a href="../contact/contact.html">联系我们</a>
+        <a href="../feedback/feedback.html">使用反馈</a>
+        <div class="right-nav">
+            <a href="#" class="login-register" id="open-modal">登录/注册</a>
+            <img src="../image/log.png" alt="登录/注册" class="logImg" id="logImg">
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
     <main>
         <div id="treatment-container"></div>
+        <div id="definition-container"></div>
     </main>
 
     <!-- 返回上一级按钮 -->
@@ -25,6 +45,25 @@
         <img src="../image/返回下一级.png" alt="返回下一级" class="icon icon-forward-to-next">
     </div>
 
-    <script src="analysis.js"></script>
+    <!-- 登录/注册模态框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <form id="login-form">
+                <h2>登录/注册</h2>
+                <label for="username">用户名:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">密码:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">提交</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+        <p>&copy; 2024 ZyxHeal. 版权所有.</p>
+    </footer>
+
 </body>
 </html>

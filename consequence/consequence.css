@@ -153,6 +153,23 @@ footer p {
     background-color: #3e8e41;
 }
 
+.definition-block {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.definition-block:hover {
+    background-color: #3e8e41;
+}
+
 /* 模态框样式 */
 .modal {
     display: none; /* 默认隐藏 */

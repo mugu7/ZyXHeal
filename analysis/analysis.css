@@ -13,11 +13,52 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 header h1 {
     margin: 0;
     font-size: 2em;
+}
+
+/* 导航栏样式 */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 导航栏右侧对齐 */
+.right-nav {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.right-nav a {
+    margin-right: 10px;
+}
+
+.right-nav .logImg {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 /* 主要内容区域样式 */
@@ -44,6 +85,21 @@ main {
 }
 
 .treatment-item p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* 定义解释项样式 */
+.definition-item {
+    margin-bottom: 20px;
+}
+
+.definition-item h3 {
+    color: #4CAF50;
+    margin-top: 0;
+}
+
+.definition-item p {
     line-height: 1.6;
     color: #555;
 }
@@ -78,4 +134,86 @@ main {
 .icon:hover {
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
     transform: scale(1.1);
+}
+
+/* 模态框样式 */
+.modal {
+    display: none; /* 默认隐藏 */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal label {
+    margin-bottom: 5px;
+}
+
+.modal input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal button:hover {
+    background-color: #3e8e41;
+}
+
+/* 底部样式 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
 }
