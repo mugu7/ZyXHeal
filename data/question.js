@@ -6,7 +6,7 @@ export const questions = [
             { label: "几乎每天", weight: 0.8 },
             { label: "每周几次", weight: 0.5 },
             { label: "偶尔", weight: 0.2 },
-            { label: "很少或从未", weight: -0.2 }
+            { label: "很少或从未", weight: 0.0 }
         ]
     },
     {
@@ -16,7 +16,7 @@ export const questions = [
             { label: "总是如此", weight: 0.8 },
             { label: "经常如此", weight: 0.5 },
             { label: "有时如此", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -26,7 +26,7 @@ export const questions = [
             { label: "明显改善", weight: 0.8 },
             { label: "有些改善", weight: 0.5 },
             { label: "没有明显变化", weight: 0.2 },
-            { label: "症状加剧", weight: -0.2 }
+            { label: "症状加剧", weight: 0.0 }
         ]
     },
     {
@@ -36,7 +36,7 @@ export const questions = [
             { label: "非常常见", weight: 0.8 },
             { label: "偶尔", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -46,7 +46,7 @@ export const questions = [
             { label: "总是", weight: 0.8 },
             { label: "经常", weight: 0.5 },
             { label: "有时候", weight: 0.2 },
-            { label: "几乎没有", weight: -0.2 }
+            { label: "几乎没有", weight: 0.0 }
         ]
     },
     {
@@ -56,7 +56,7 @@ export const questions = [
             { label: "是的，晚上睡眠更差", weight: 0.8 },
             { label: "是的，白天小憩能改善晚上睡眠", weight: 0.5 },
             { label: "没有明显的规律", weight: 0.2 },
-            { label: "不确定", weight: -0.2 }
+            { label: "不确定", weight: 0.0 }
         ]
     },
     {
@@ -66,7 +66,7 @@ export const questions = [
             { label: "是的，经常遇到这些问题", weight: 0.8 },
             { label: "偶尔遇到这些问题", weight: 0.5 },
             { label: "很少遇到这些问题", weight: 0.2 },
-            { label: "完全没有这些问题", weight: -0.2 }
+            { label: "完全没有这些问题", weight: 0.0 }
         ]
     },
     {
@@ -76,7 +76,7 @@ export const questions = [
             { label: "经常被指出", weight: 0.8 },
             { label: "偶尔被指出", weight: 0.5 },
             { label: "很少被指出", weight: 0.2 },
-            { label: "从未被指出", weight: -0.2 }
+            { label: "从未被指出", weight: 0.0 }
         ]
     },
     {
@@ -86,7 +86,7 @@ export const questions = [
             { label: "几乎总是", weight: 0.8 },
             { label: "经常", weight: 0.5 },
             { label: "有时候", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -96,7 +96,7 @@ export const questions = [
             { label: "几乎每晚", weight: 0.8 },
             { label: "每周几次", weight: 0.5 },
             { label: "偶尔", weight: 0.2 },
-            { label: "很少", weight: -0.2 }
+            { label: "很少", weight: 0.0 }
         ]
     },
     {
@@ -107,7 +107,7 @@ export const questions = [
             { label: "较差", weight: 0.5 },
             { label: "一般", weight: 0.2 },
             { label: "较好", weight: 0.25 },
-            { label: "非常好", weight: -0.2 }
+            { label: "非常好", weight: 0.0 }
         ]
     },
     {
@@ -117,7 +117,7 @@ export const questions = [
             { label: "几乎每天", weight: 0.8 },
             { label: "每周几次", weight: 0.5 },
             { label: "偶尔", weight: 0.2 },
-            { label: "很少或从未", weight: -0.2 }
+            { label: "很少或从未", weight: 0.0 }
         ]
     },
     {
@@ -127,7 +127,7 @@ export const questions = [
             { label: "几乎每晚", weight: 0.8 },
             { label: "每周几次", weight: 0.5 },
             { label: "偶尔", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -137,7 +137,7 @@ export const questions = [
             { label: "经常如此", weight: 0.8 },
             { label: "有时如此", weight: 0.5 },
             { label: "很少如此", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -147,7 +147,7 @@ export const questions = [
             { label: "是的，有相关问题", weight: 0.8 },
             { label: "曾经有过，但现在控制住了", weight: 0.5 },
             { label: "没有这些问题", weight: 0.2 },
-            { label: "不清楚", weight: -0.2 }
+            { label: "不清楚", weight: 0.0 }
         ]
     },
     {
@@ -157,7 +157,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -167,7 +167,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -177,7 +177,7 @@ export const questions = [
             { label: "几乎总是", weight: 0.8 },
             { label: "经常", weight: 0.5 },
             { label: "有时", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -187,7 +187,7 @@ export const questions = [
             { label: "几乎总是", weight: 0.8 },
             { label: "经常", weight: 0.5 },
             { label: "有时", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -197,7 +197,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -207,7 +207,7 @@ export const questions = [
             { label: "几乎总是", weight: 0.8 },
             { label: "经常", weight: 0.5 },
             { label: "有时", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -217,7 +217,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -227,7 +227,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -237,7 +237,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -247,7 +247,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -257,7 +257,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -267,7 +267,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -277,7 +277,7 @@ export const questions = [
             { label: "几乎每晚", weight: 0.8 },
             { label: "每周几次", weight: 0.5 },
             { label: "偶尔", weight: 0.2 },
-            { label: "很少", weight: -0.2 }
+            { label: "很少", weight: 0.0 }
         ]
     },
     {
@@ -287,7 +287,7 @@ export const questions = [
             { label: "几乎每晚", weight: 0.8 },
             { label: "每周几次", weight: 0.5 },
             { label: "偶尔", weight: 0.2 },
-            { label: "很少", weight: -0.2 }
+            { label: "很少", weight: 0.0 }
         ]
     },
     {
@@ -297,7 +297,7 @@ export const questions = [
             { label: "几乎每晚", weight: 0.8 },
             { label: "每周几次", weight: 0.5 },
             { label: "偶尔", weight: 0.2 },
-            { label: "很少", weight: -0.2 }
+            { label: "很少", weight: 0.0 }
         ]
     },
     {
@@ -307,7 +307,7 @@ export const questions = [
             { label: "几乎总是", weight: 0.8 },
             { label: "经常", weight: 0.5 },
             { label: "有时", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -317,7 +317,7 @@ export const questions = [
             { label: "几乎总是", weight: 0.8 },
             { label: "经常", weight: 0.5 },
             { label: "有时", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -327,7 +327,7 @@ export const questions = [
             { label: "几乎总是", weight: 0.8 },
             { label: "经常", weight: 0.5 },
             { label: "有时", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -337,7 +337,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -347,7 +347,7 @@ export const questions = [
             { label: "几乎每晚", weight: 0.8 },
             { label: "每周几次", weight: 0.5 },
             { label: "偶尔", weight: 0.2 },
-            { label: "很少", weight: -0.2 }
+            { label: "很少", weight: 0.0 }
         ]
     },
     {
@@ -357,7 +357,7 @@ export const questions = [
             { label: "几乎总是", weight: 0.8 },
             { label: "经常", weight: 0.5 },
             { label: "有时", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -367,7 +367,7 @@ export const questions = [
             { label: "几乎总是", weight: 0.8 },
             { label: "经常", weight: 0.5 },
             { label: "有时", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -377,7 +377,7 @@ export const questions = [
             { label: "是的，接近这个范围", weight: 0.8 },
             { label: "通常多于这个范围", weight: 0.5 },
             { label: "通常少于这个范围", weight: 0.2 },
-            { label: "完全不确定", weight: -0.2 }
+            { label: "完全不确定", weight: 0.0 }
         ]
     },
     {
@@ -387,7 +387,7 @@ export const questions = [
             { label: "我认为是正常的", weight: 0.8 },
             { label: "我不确定", weight: 0.5 },
             { label: "我认为不正常", weight: 0.2 },
-            { label: "我没有关注过这个问题", weight: -0.2 }
+            { label: "我没有关注过这个问题", weight: 0.0 }
         ]
     },
     {
@@ -397,7 +397,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -407,7 +407,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -417,7 +417,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -427,7 +427,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -437,7 +437,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -447,7 +447,7 @@ export const questions = [
             { label: "几乎总是", weight: 0.8 },
             { label: "经常", weight: 0.5 },
             { label: "有时", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -457,7 +457,7 @@ export const questions = [
             { label: "是的，我的作息时间与众不同", weight: 0.8 },
             { label: "有时会有所不同", weight: 0.5 },
             { label: "大多数时候与大多数人一致", weight: 0.2 },
-            { label: "完全一致", weight: -0.2 }
+            { label: "完全一致", weight: 0.0 }
         ]
     },
     {
@@ -467,7 +467,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -477,7 +477,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -487,7 +487,7 @@ export const questions = [
             { label: "几乎总是", weight: 0.8 },
             { label: "经常", weight: 0.5 },
             { label: "有时", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -498,7 +498,7 @@ export const questions = [
             { label: "较差", weight: 0.5 },
             { label: "一般", weight: 0.2 },
             { label: "较好", weight: 0.25 },
-            { label: "非常好", weight: -0.2 }
+            { label: "非常好", weight: 0.0 }
         ]
     },
     {
@@ -508,7 +508,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -518,7 +518,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -528,7 +528,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -538,7 +538,7 @@ export const questions = [
             { label: "几乎总是", weight: 0.8 },
             { label: "经常", weight: 0.5 },
             { label: "有时", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -548,7 +548,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -558,7 +558,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -568,7 +568,7 @@ export const questions = [
             { label: "几乎每天", weight: 0.8 },
             { label: "每周几次", weight: 0.5 },
             { label: "偶尔", weight: 0.2 },
-            { label: "很少或从未", weight: -0.2 }
+            { label: "很少或从未", weight: 0.0 }
         ]
     },
     {
@@ -578,7 +578,7 @@ export const questions = [
             { label: "经常", weight: 0.8 },
             { label: "有时", weight: 0.5 },
             { label: "很少", weight: 0.2 },
-            { label: "从未", weight: -0.2 }
+            { label: "从未", weight: 0.0 }
         ]
     },
     {
@@ -588,7 +588,7 @@ export const questions = [
             { label: "几乎每天", weight: 0.8 },
             { label: "每周几次", weight: 0.5 },
             { label: "偶尔", weight: 0.2 },
-            { label: "很少或从未", weight: -0.2 }
+            { label: "很少或从未", weight: 0.0 }
         ]
     },
     {
@@ -598,7 +598,7 @@ export const questions = [
             { label: "几乎每晚", weight: 0.8 },
             { label: "每周几次", weight: 0.5 },
             { label: "偶尔", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     },
     {
@@ -608,7 +608,7 @@ export const questions = [
             { label: "几乎每晚", weight: 0.8 },
             { label: "每周几次", weight: 0.5 },
             { label: "偶尔", weight: 0.2 },
-            { label: "几乎从不", weight: -0.2 }
+            { label: "几乎从不", weight: 0.0 }
         ]
     }
 ];
