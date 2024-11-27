@@ -5,29 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const logImg = document.querySelector('.logImg');
     const feedbackForm = document.getElementById('feedback-form');
 
-    // 打开模态框
-    openModalBtn.addEventListener('click', (event) => {
-        event.preventDefault();
-        modal.style.display = 'block';
-    });
-
-    // 图标点击打开模态框
-    logImg.addEventListener('click', (event) => {
-        event.preventDefault();
-        modal.style.display = 'block';
-    });
-
-    // 关闭模态框
-    closeModalBtn.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
-
-    // 点击模态框外部关闭模态框
-    window.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
 
     // 提交反馈表单
     feedbackForm.addEventListener('submit', (event) => {
@@ -40,27 +17,66 @@ document.addEventListener('DOMContentLoaded', () => {
             data[key] = value;
         });
 
-        // 发送数据到后端
-        fetch('/api/feedback', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-        .then(response => response.json())
-        .then(result => {
-            alert('感谢您的反馈！');
-            // 处理后端返回的结果
-            console.log(result);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('提交失败，请重试');
-        });
+        // 显示加载中的提示信息
+        const loadingModal = document.createElement('div');
+        loadingModal.className = 'loading-modal';
+        loadingModal.innerHTML = `
+            <div class="loading-modal-content">
+                <p>正在提交...</p>
+            </div>
+        `;
+        document.body.appendChild(loadingModal);
+        loadingModal.style.display = 'block';
+
+        // 延时时间（单位：毫秒）
+        const submitDelayTime = 500; // 你可以根据需要修改这个值
+
+        // 延时后显示提交成功的模态框
+        setTimeout(() => {
+            // 控制台打印用户提交的反馈
+            console.log('用户提交的反馈:', data);
+
+            // 移除加载中的提示信息
+            loadingModal.remove();
+
+            // 显示提交成功的模态框
+            const successModal = document.createElement('div');
+            successModal.className = 'success-modal';
+            successModal.innerHTML = `
+                <div class="success-modal-content">
+                    <span class="close" id="close-success-modal">&times;</span>
+                    <div class="container_content">
+                        <img src="../image/提交成功.png" alt="提交成功" class="success-icon">
+                        <p>提交成功，感谢您的反馈！</p>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(successModal);
+            successModal.style.display = 'block';
+
+            // 关闭提交成功的模态框
+            const closeSuccessModal = document.querySelector('#close-success-modal');
+            closeSuccessModal.addEventListener('click', () => {
+                successModal.remove();
+            });
+
+            // 点击模态框外部关闭模态框
+            successModal.addEventListener('click', (event) => {
+                if (event.target === successModal) {
+                    successModal.remove();
+                }
+            });
+
+            // 设置提交成功模态框自动关闭的时间（单位：毫秒）
+            const successDelayTime = 500; // 你可以根据需要修改这个值
+
+            // 延时后自动关闭提交成功的模态框
+            setTimeout(() => {
+                successModal.remove();
+            }, successDelayTime);
+        }, submitDelayTime);
     });
 });
-
 
 document.addEventListener('DOMContentLoaded', () => {
     // 返回上一级按钮的点击事件
