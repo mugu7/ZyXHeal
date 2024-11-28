@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('diagnosis-form');
     const questionsContainer = document.getElementById('questions-container');
     const refreshButton = document.getElementById('refresh-questions');
-    const numQuestions = 4; // 随机生成的问题数量，最后一个问题是固定的
+    const numQuestions = 29; // 随机生成的问题数量，最后一个问题是固定的
     const lastQuestion = {
         question: "您是否有其他的睡眠问题，例如难以入睡或在夜间频繁醒来？",
         symptom: "其他睡眠障碍",
