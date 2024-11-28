@@ -646,8 +646,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return shuffled.slice(0, count);
     }
 
-
-
     function displayQuestions(questions, userChoices) {
         questionsContainer.innerHTML = ''; // 清空已有问题
 
@@ -691,27 +689,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 表单提交
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
-
+    
         const formData = new FormData(form);
         const diagnosisData = {};
         const userChoices = {};
-
+    
         formData.forEach((value, key) => {
             diagnosisData[key] = parseFloat(value);
             userChoices[key] = value;
         });
-
+    
         // 更新用户选择到 sessionStorage
         sessionStorage.setItem('savedUserChoices', JSON.stringify(userChoices));
-
+    
         console.log('提交的诊断数据:', diagnosisData);
-
+    
         // 后端地址
         const backendUrl = 'http://121.41.10.59:8080/api/list'; 
-
+    
         try {
             const response = await fetch(backendUrl, {
                 method: 'POST',
@@ -720,19 +717,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 body: JSON.stringify(diagnosisData)
             });
-
+    
             if (response.ok) {
                 const diagnosisResult = await response.json();
                 console.log('后端返回的诊断结果:', diagnosisResult);
-
-                // 将概率数据转换为带有两位小数的百分数
-                const diagnosisResultWithPercentage = diagnosisResult.map(item => ({
-                    ...item,
-                    percentage: (item.probability * 100).toFixed(2)
-                }));
-
-                localStorage.setItem('diagnosisResult', JSON.stringify(diagnosisResultWithPercentage));
-
+    
+                // 将诊断结果存储到 localStorage
+                localStorage.setItem('diagnosisResult', JSON.stringify(diagnosisResult));
+    
                 window.location.href = '../consequence/consequence.html';
             } else {
                 console.error('请求失败:', response.status, response.statusText);
@@ -742,17 +734,13 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('请求出错:', error);
             alert('请求出错，请检查网络连接或稍后再试。');
         }
-    });
-
+    });    
     // 刷新问题按钮点击事件
     refreshButton.addEventListener('click', () => {
         sessionStorage.removeItem('generatedQuestions');
         generateQuestions();
     });
 
-});
-
-document.addEventListener('DOMContentLoaded', () => {
     // 返回上一级按钮的点击事件
     document.querySelector('.icon-back-to-prev').addEventListener('click', () => {
         history.back();

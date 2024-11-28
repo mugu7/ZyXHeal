@@ -116,20 +116,6 @@ nav a:hover {
     font-size: 1.2em;
 }
 
-/* 底部样式 */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
 
 /* 子内容容器样式 */
 .sub-content-container {
@@ -153,22 +139,6 @@ footer p {
     background-color: #3e8e41;
 }
 
-.definition-block {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-bottom: 10px;
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-}
-
-.definition-block:hover {
-    background-color: #3e8e41;
-}
 
 /* 模态框样式 */
 .modal {
@@ -267,4 +237,19 @@ footer p {
 .icon:hover {
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
     transform: scale(1.1);
+}
+
+/* 底部样式 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
 }
