@@ -24,8 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const title = document.createElement('h3');
             title.textContent = result.name;
 
+            // 格式化概率为两位小数的百分数
+            const formattedProbability = (parseFloat(result.probability) * 100).toFixed(2) + '%';
             const probability = document.createElement('p');
-            probability.textContent = `概率: ${result.probability}`;
+            probability.textContent = `概率: ${formattedProbability}`;
 
             const subContentContainer = document.createElement('div');
             subContentContainer.className = 'sub-content-container';
